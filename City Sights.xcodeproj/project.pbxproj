@@ -11,6 +11,9 @@
 		FF5110EC26E572EC0063A737 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5110EB26E572EC0063A737 /* LaunchView.swift */; };
 		FF5110EE26E572EF0063A737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5110ED26E572EF0063A737 /* Assets.xcassets */; };
 		FF5110F126E572EF0063A737 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5110F026E572EF0063A737 /* Preview Assets.xcassets */; };
+		FF884C7A26EEA4C7001A5CC2 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF884C7926EEA4C7001A5CC2 /* Business.swift */; };
+		FF884C7C26EEA713001A5CC2 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF884C7B26EEA713001A5CC2 /* BusinessSearch.swift */; };
+		FF884C7F26EEA98E001A5CC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF884C7E26EEA98E001A5CC2 /* Constants.swift */; };
 		FFC3E3F826EAFCAA008A75D0 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3E3F726EAFCAA008A75D0 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +24,9 @@
 		FF5110ED26E572EF0063A737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF5110F026E572EF0063A737 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF5110F226E572EF0063A737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF884C7926EEA4C7001A5CC2 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		FF884C7B26EEA713001A5CC2 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
+		FF884C7E26EEA98E001A5CC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFC3E3F726EAFCAA008A75D0 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +60,7 @@
 		FF5110E826E572EC0063A737 /* City Sights */ = {
 			isa = PBXGroup;
 			children = (
+				FF884C7D26EEA981001A5CC2 /* Helpers */,
 				FF5110F826E573640063A737 /* Models */,
 				FFC3E3F626EAFBF9008A75D0 /* ViewModels */,
 				FF5110F926E5736A0063A737 /* Views */,
@@ -76,6 +83,8 @@
 		FF5110F826E573640063A737 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FF884C7926EEA4C7001A5CC2 /* Business.swift */,
+				FF884C7B26EEA713001A5CC2 /* BusinessSearch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -86,6 +95,14 @@
 				FF5110EB26E572EC0063A737 /* LaunchView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FF884C7D26EEA981001A5CC2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FF884C7E26EEA98E001A5CC2 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		FFC3E3F626EAFBF9008A75D0 /* ViewModels */ = {
@@ -166,8 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF5110EC26E572EC0063A737 /* LaunchView.swift in Sources */,
+				FF884C7A26EEA4C7001A5CC2 /* Business.swift in Sources */,
 				FF5110EA26E572EC0063A737 /* CitySightsApp.swift in Sources */,
+				FF884C7C26EEA713001A5CC2 /* BusinessSearch.swift in Sources */,
 				FFC3E3F826EAFCAA008A75D0 /* ContentModel.swift in Sources */,
+				FF884C7F26EEA98E001A5CC2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
