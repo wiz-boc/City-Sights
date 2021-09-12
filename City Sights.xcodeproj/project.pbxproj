@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF5110EA26E572EC0063A737 /* City_SightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5110E926E572EC0063A737 /* City_SightsApp.swift */; };
-		FF5110EC26E572EC0063A737 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5110EB26E572EC0063A737 /* ContentView.swift */; };
+		FF5110EA26E572EC0063A737 /* CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5110E926E572EC0063A737 /* CitySightsApp.swift */; };
+		FF5110EC26E572EC0063A737 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5110EB26E572EC0063A737 /* LaunchView.swift */; };
 		FF5110EE26E572EF0063A737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5110ED26E572EF0063A737 /* Assets.xcassets */; };
 		FF5110F126E572EF0063A737 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5110F026E572EF0063A737 /* Preview Assets.xcassets */; };
+		FFC3E3F826EAFCAA008A75D0 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3E3F726EAFCAA008A75D0 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF5110E626E572EC0063A737 /* City Sights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Sights.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF5110E926E572EC0063A737 /* City_SightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City_SightsApp.swift; sourceTree = "<group>"; };
-		FF5110EB26E572EC0063A737 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF5110E926E572EC0063A737 /* CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightsApp.swift; sourceTree = "<group>"; };
+		FF5110EB26E572EC0063A737 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		FF5110ED26E572EF0063A737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF5110F026E572EF0063A737 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF5110F226E572EF0063A737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC3E3F726EAFCAA008A75D0 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,10 @@
 		FF5110E826E572EC0063A737 /* City Sights */ = {
 			isa = PBXGroup;
 			children = (
-				FF5110E926E572EC0063A737 /* City_SightsApp.swift */,
-				FF5110EB26E572EC0063A737 /* ContentView.swift */,
+				FF5110F826E573640063A737 /* Models */,
+				FFC3E3F626EAFBF9008A75D0 /* ViewModels */,
+				FF5110F926E5736A0063A737 /* Views */,
+				FF5110E926E572EC0063A737 /* CitySightsApp.swift */,
 				FF5110ED26E572EF0063A737 /* Assets.xcassets */,
 				FF5110F226E572EF0063A737 /* Info.plist */,
 				FF5110EF26E572EF0063A737 /* Preview Content */,
@@ -67,6 +71,29 @@
 				FF5110F026E572EF0063A737 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF5110F826E573640063A737 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF5110F926E5736A0063A737 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF5110EB26E572EC0063A737 /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFC3E3F626EAFBF9008A75D0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FFC3E3F726EAFCAA008A75D0 /* ContentModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF5110EC26E572EC0063A737 /* ContentView.swift in Sources */,
-				FF5110EA26E572EC0063A737 /* City_SightsApp.swift in Sources */,
+				FF5110EC26E572EC0063A737 /* LaunchView.swift in Sources */,
+				FF5110EA26E572EC0063A737 /* CitySightsApp.swift in Sources */,
+				FFC3E3F826EAFCAA008A75D0 /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
