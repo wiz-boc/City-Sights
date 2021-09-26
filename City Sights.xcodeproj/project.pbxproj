@@ -20,6 +20,7 @@
 		FF884C7C26EEA713001A5CC2 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF884C7B26EEA713001A5CC2 /* BusinessSearch.swift */; };
 		FF884C7F26EEA98E001A5CC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF884C7E26EEA98E001A5CC2 /* Constants.swift */; };
 		FFC3E3F826EAFCAA008A75D0 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3E3F726EAFCAA008A75D0 /* ContentModel.swift */; };
+		FFCB78682700DC0D00B6F55E /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB78672700DC0D00B6F55E /* BusinessDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FF884C7B26EEA713001A5CC2 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		FF884C7E26EEA98E001A5CC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFC3E3F726EAFCAA008A75D0 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		FFCB78672700DC0D00B6F55E /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		FF21254326F415F40017BC38 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				FFCB78662700DBFB00B6F55E /* Detail */,
 				FF21254426F416040017BC38 /* BusinessList.swift */,
 				FF21254626F418510017BC38 /* BusinessSectionHeader.swift */,
 				FF21254826F418E20017BC38 /* BusinessSection.swift */,
@@ -160,6 +163,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		FFCB78662700DBFB00B6F55E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FFCB78672700DC0D00B6F55E /* BusinessDetail.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,6 +246,7 @@
 				FF5110EC26E572EC0063A737 /* LaunchView.swift in Sources */,
 				FF21254726F418510017BC38 /* BusinessSectionHeader.swift in Sources */,
 				FF884C7A26EEA4C7001A5CC2 /* Business.swift in Sources */,
+				FFCB78682700DC0D00B6F55E /* BusinessDetail.swift in Sources */,
 				FF5110EA26E572EC0063A737 /* CitySightsApp.swift in Sources */,
 				FF884C7C26EEA713001A5CC2 /* BusinessSearch.swift in Sources */,
 				FF21254926F418E20017BC38 /* BusinessSection.swift in Sources */,
