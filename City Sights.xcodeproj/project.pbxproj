@@ -21,6 +21,7 @@
 		FF884C7F26EEA98E001A5CC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF884C7E26EEA98E001A5CC2 /* Constants.swift */; };
 		FFC3E3F826EAFCAA008A75D0 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3E3F726EAFCAA008A75D0 /* ContentModel.swift */; };
 		FFCB78682700DC0D00B6F55E /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB78672700DC0D00B6F55E /* BusinessDetail.swift */; };
+		FFCB786B2700EA6000B6F55E /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB786A2700EA6000B6F55E /* BusinessMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FF884C7E26EEA98E001A5CC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFC3E3F726EAFCAA008A75D0 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		FFCB78672700DC0D00B6F55E /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
+		FFCB786A2700EA6000B6F55E /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		FF21254026F413120017BC38 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FFCB78692700EA3D00B6F55E /* Map */,
 				FF21254326F415F40017BC38 /* List */,
 				FF21254126F413280017BC38 /* HomeView.swift */,
 			);
@@ -171,6 +174,14 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		FFCB78692700EA3D00B6F55E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				FFCB786A2700EA6000B6F55E /* BusinessMap.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,6 +260,7 @@
 				FFCB78682700DC0D00B6F55E /* BusinessDetail.swift in Sources */,
 				FF5110EA26E572EC0063A737 /* CitySightsApp.swift in Sources */,
 				FF884C7C26EEA713001A5CC2 /* BusinessSearch.swift in Sources */,
+				FFCB786B2700EA6000B6F55E /* BusinessMap.swift in Sources */,
 				FF21254926F418E20017BC38 /* BusinessSection.swift in Sources */,
 				FFC3E3F826EAFCAA008A75D0 /* ContentModel.swift in Sources */,
 				FF884C7F26EEA98E001A5CC2 /* Constants.swift in Sources */,
