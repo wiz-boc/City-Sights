@@ -10,6 +10,8 @@ import SwiftUI
 struct BusinessDetail: View {
     
     var business: Business
+    @State private var showDirections = false
+    
     var body: some View {
         VStack(alignment: .leading){
             
@@ -40,23 +42,8 @@ struct BusinessDetail: View {
                 
             }
             
-            
-            
             Group{
-                //Business Name
-                Text(business.name!)
-                    .font(.largeTitle)
-                    .padding()
-                //loop through display Address
-                
-                if business.location?.displayAddress != nil {
-                    ForEach(business.location!.displayAddress!, id: \.self){ displayLine in
-                        Text(displayLine)
-                            .padding(.horizontal)
-                    }
-                }
-                //Rading
-                Image("regular_\(business.rating ?? 0)")
+                BusinessTitle(business: business)
                     .padding()
                 
                 Divider()
@@ -98,6 +85,7 @@ struct BusinessDetail: View {
             //Get direction buttons
             Button(action: {
                 //TODO
+                showDirections.toggle()
             }) {
                 ZStack{
                     Rectangle()
@@ -109,7 +97,11 @@ struct BusinessDetail: View {
                         .foregroundColor(.white)
                         .bold()
                 }
-            }.padding()
+            }
+            .padding()
+            .sheet(isPresented: $showDirections) {
+                DirectionsView(business: business)
+            }
         }
     }
 }
