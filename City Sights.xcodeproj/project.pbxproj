@@ -72,6 +72,7 @@
 		FF21254026F413120017BC38 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FFCB78662700DBFB00B6F55E /* Detail */,
 				FFCB78692700EA3D00B6F55E /* Map */,
 				FF21254326F415F40017BC38 /* List */,
 				FF21254126F413280017BC38 /* HomeView.swift */,
@@ -82,7 +83,6 @@
 		FF21254326F415F40017BC38 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				FFCB78662700DBFB00B6F55E /* Detail */,
 				FF21254426F416040017BC38 /* BusinessList.swift */,
 				FF21254626F418510017BC38 /* BusinessSectionHeader.swift */,
 				FF21254826F418E20017BC38 /* BusinessSection.swift */,
