@@ -25,6 +25,10 @@
 		FFCB786E2700FE9A00B6F55E /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB786D2700FE9A00B6F55E /* DirectionsView.swift */; };
 		FFCB78702700FF4500B6F55E /* BusinessTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB786F2700FF4500B6F55E /* BusinessTitle.swift */; };
 		FFCB78722701027000B6F55E /* DirectionsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB78712701027000B6F55E /* DirectionsMap.swift */; };
+		FFCB78742701457000B6F55E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB78732701457000B6F55E /* OnboardingView.swift */; };
+		FFCB787627014B0900B6F55E /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB787527014B0900B6F55E /* LocationDeniedView.swift */; };
+		FFCB7879270166D700B6F55E /* YelpAttribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB7878270166D700B6F55E /* YelpAttribution.swift */; };
+		FFCB787B2701685500B6F55E /* DashedDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB787A2701685500B6F55E /* DashedDivider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		FFCB786D2700FE9A00B6F55E /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
 		FFCB786F2700FF4500B6F55E /* BusinessTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTitle.swift; sourceTree = "<group>"; };
 		FFCB78712701027000B6F55E /* DirectionsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsMap.swift; sourceTree = "<group>"; };
+		FFCB78732701457000B6F55E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		FFCB787527014B0900B6F55E /* LocationDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeniedView.swift; sourceTree = "<group>"; };
+		FFCB7878270166D700B6F55E /* YelpAttribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAttribution.swift; sourceTree = "<group>"; };
+		FFCB787A2701685500B6F55E /* DashedDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 		FF21253E26F413010017BC38 /* Denied */ = {
 			isa = PBXGroup;
 			children = (
+				FFCB787527014B0900B6F55E /* LocationDeniedView.swift */,
 			);
 			path = Denied;
 			sourceTree = "<group>";
@@ -71,6 +80,7 @@
 		FF21253F26F413090017BC38 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				FFCB78732701457000B6F55E /* OnboardingView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -78,10 +88,10 @@
 		FF21254026F413120017BC38 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FF21254126F413280017BC38 /* HomeView.swift */,
 				FFCB78662700DBFB00B6F55E /* Detail */,
 				FFCB78692700EA3D00B6F55E /* Map */,
 				FF21254326F415F40017BC38 /* List */,
-				FF21254126F413280017BC38 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -148,6 +158,7 @@
 		FF5110F926E5736A0063A737 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FFCB7877270166B800B6F55E /* Common */,
 				FF21254026F413120017BC38 /* Home */,
 				FF21253F26F413090017BC38 /* Onboarding */,
 				FF21253E26F413010017BC38 /* Denied */,
@@ -197,6 +208,15 @@
 				FFCB786D2700FE9A00B6F55E /* DirectionsView.swift */,
 			);
 			path = DirectionsViews;
+			sourceTree = "<group>";
+		};
+		FFCB7877270166B800B6F55E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FFCB7878270166D700B6F55E /* YelpAttribution.swift */,
+				FFCB787A2701685500B6F55E /* DashedDivider.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,15 +294,19 @@
 				FF21254226F413280017BC38 /* HomeView.swift in Sources */,
 				FF5110EC26E572EC0063A737 /* LaunchView.swift in Sources */,
 				FF21254726F418510017BC38 /* BusinessSectionHeader.swift in Sources */,
+				FFCB787627014B0900B6F55E /* LocationDeniedView.swift in Sources */,
 				FF884C7A26EEA4C7001A5CC2 /* Business.swift in Sources */,
 				FFCB78682700DC0D00B6F55E /* BusinessDetail.swift in Sources */,
 				FF5110EA26E572EC0063A737 /* CitySightsApp.swift in Sources */,
+				FFCB787B2701685500B6F55E /* DashedDivider.swift in Sources */,
 				FFCB786E2700FE9A00B6F55E /* DirectionsView.swift in Sources */,
 				FFCB78702700FF4500B6F55E /* BusinessTitle.swift in Sources */,
 				FF884C7C26EEA713001A5CC2 /* BusinessSearch.swift in Sources */,
 				FFCB786B2700EA6000B6F55E /* BusinessMap.swift in Sources */,
 				FF21254926F418E20017BC38 /* BusinessSection.swift in Sources */,
+				FFCB7879270166D700B6F55E /* YelpAttribution.swift in Sources */,
 				FFC3E3F826EAFCAA008A75D0 /* ContentModel.swift in Sources */,
+				FFCB78742701457000B6F55E /* OnboardingView.swift in Sources */,
 				FF884C7F26EEA98E001A5CC2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

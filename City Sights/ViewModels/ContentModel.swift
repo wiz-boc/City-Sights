@@ -14,16 +14,21 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var restaurants = [Business]()
     @Published var sights = [Business]()
     @Published var authorizationState = CLAuthorizationStatus.notDetermined
+    @Published var placemark: CLPlacemark?
     
     override init() {
         super.init()
         //Set content model as the delegate of the location manager
         locationManager.delegate = self
-        //Request permission from the user
-        locationManager.requestWhenInUseAuthorization()
+       
         
         //TODL Start geolocating the user, after we get permission
         //locationManager.startUpdatingLocation()
+    }
+    
+    func requestGeolocationPermission(){
+        //Request permission from the user
+        locationManager.requestWhenInUseAuthorization()
     }
     
     //MARK - Location Manager Delegate methods
@@ -46,7 +51,16 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         
         if userLocation != nil {
             locationManager.stopUpdatingLocation()
-            //TODO: if we have coordinates of user , send into Yelp API
+            
+            let geoCoder = CLGeocoder()
+            geoCoder.reverseGeocodeLocation(userLocation!) { [self] placemarks, error in
+                
+                guard self == self else { return }
+                if error == nil && placemarks != nil {
+                    self.placemark = placemarks?.first
+                }
+            }
+            
             getBusinesses(for: Constants.sightsKey, location: userLocation!)
             getBusinesses(for: Constants.restaurantsKey, location: userLocation!)
         }
